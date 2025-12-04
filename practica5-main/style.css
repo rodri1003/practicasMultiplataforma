@@ -1,0 +1,136 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #61dafb;
+    text-align: center;
+    border-bottom: 1px solid #4a4f58;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+.controls-column {
+    flex: 1;
+    max-width: 500px;
+}
+
+.playlist-column {
+    background-color: #3c4049;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1.5;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.section-box {
+    background-color: #3c4049;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+#load-mp3 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.extra-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#audio-player {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#status {
+    margin-top: 15px;
+    font-style: italic;
+    color: #aaa;
+    text-align: center;
+}
+
+#now-playing {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- Estilos de la Playlist --- */
+#playlist-ui {
+    list-style: none;
+    padding: 0;
+}
+
+#playlist-ui li {
+    padding: 12px;
+    border-bottom: 1px solid #4a4f58;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#playlist-ui li:hover {
+    background-color: #4a4f58;
+}
+
+#playlist-ui li.playing {
+    background-color: #61dafb;
+    color: #282c34;
+    font-weight: bold;
+}
+
+.track-title {
+    flex-grow: 1;
+}
+
+.delete-btn {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background-color: #e04757;
+}

@@ -1,0 +1,37 @@
+{ 
+  "name": "practica_5", 
+  "version": "1.0.1", 
+  "main": "main.js", 
+  "scripts": { 
+    "start": "electron .", 
+    "build": "electron-builder --publish always", 
+    "postinstall": "electron-builder install-app-deps" 
+  }, 
+  "keywords": [], 
+  "author": "", 
+  "license": "ISC", 
+  "description": "", 
+  "devDependencies": { 
+    "electron": "^38.1.2", 
+    "electron-builder": "^24.0.0" 
+  }, 
+  "dependencies": { 
+    "electron-updater": "^6.0.0" 
+  }, 
+  "build": { 
+    "appId": "com.jonatan.mireproductor", 
+    "productName": "Mi Reproductor de Música", 
+    "directories": { 
+      "output": "dist" 
+    }, 
+    "files": [ 
+      "**/*", 
+      "!node_modules/**/*" 
+    ], 
+    "publish": { 
+      "provider": "github", 
+      "owner": "jonatanegcPM", 
+      "repo": "practica5" 
+    } 
+  } 
+}

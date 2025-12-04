@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>U20220546</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jonatan Guevara</h1>
+
+    <div class="main-container">
+        <div class="controls-column">
+            <div class="player-container section-box">
+                <h2>Controles</h2>
+                <button id="load-mp3">Cargar Archivo MP3 a la Lista</button>
+                <p id="now-playing">Ahora suena: Nada</p>
+                <audio id="audio-player" controls></audio>
+                <div class="extra-controls">
+                    <button id="prev-btn">⏮️ Anterior</button>
+                    <button id="next-btn">Siguiente ⏭️</button>
+                    <button id="repeat-btn">Repetir: No 🔁</button>
+                </div>
+            </div>
+             <p id="status">Estado: ¡Listo para empezar!</p>
+        </div>
+
+        <div class="playlist-column">
+            <h2>Mi Lista de Reproducción</h2>
+            <ul id="playlist-ui">
+                </ul>
+        </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+</body>
+</html>
